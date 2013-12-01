@@ -6,7 +6,7 @@ import cs3530.memory_disk.PageReferenceGeneratorFile;
 public class TryPageReferenceGeneratorFile {
 
 	public static void main(String[] args) {
-		PageReferenceGenerator prg = new PageReferenceGeneratorFile("texMichael.din", 12);
+		PageReferenceGenerator prg = new PageReferenceGeneratorFile("spice.din", 12);
 		for(int x : prg) {
 			System.out.println(x);
 		}
