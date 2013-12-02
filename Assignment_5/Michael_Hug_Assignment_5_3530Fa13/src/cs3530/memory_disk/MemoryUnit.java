@@ -19,6 +19,7 @@ public class MemoryUnit {
 	
 	private int[] pageTable;
 	private Process theProcess;
+        private int selectionstrategy;
 	
 	/**
 	 * Create a memory unit with the given number of Frames
@@ -26,12 +27,13 @@ public class MemoryUnit {
 	 * 
 	 * 
 	 */
-	public MemoryUnit(int memorySizeInFrames) {
+	public MemoryUnit(int memorySizeInFrames,int selectionstrategy) {
 		numberOfFrames = memorySizeInFrames;
 		frameToPageMap = new int[numberOfFrames];
 		Arrays.fill(frameToPageMap, -1);
 		frameRefTime = new int[numberOfFrames];
 		pageLoadTime = new int[numberOfFrames];
+                this.selectionstrategy= selectionstrategy;
 	}
 	
 	/**
@@ -56,7 +58,16 @@ public class MemoryUnit {
 	 * @return
 	 */
 	private int evictPage() {
-		int x = choose_constant();
+		int x = -1;
+                if (selectionstrategy==0)
+                    x=choose_optimal();
+                if (selectionstrategy==1)
+                    x=choose_LRU();
+                if (selectionstrategy==2)
+                    x=choose_constant();
+                if (selectionstrategy==3)
+                    x=choose_random();
+                
 		int page = frameToPageMap[x];
 		//System.out.printf("Process %4d Page %4d evicted from frame %4d\n",
 		//		theProcess.getProcessId(), page, x);
