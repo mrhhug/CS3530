@@ -26,7 +26,7 @@ public class PageReferenceGeneratorFile implements PageReferenceGenerator {
 	private String fileName;
 	private BufferedReader input;
 	private String nextLine;
-        private int NumberOfReferences =1000005;
+        private int NumberOfReferences =500000*3/2;
 	
 	/**
 	 * Read in data from the given file name.
@@ -105,7 +105,9 @@ public class PageReferenceGeneratorFile implements PageReferenceGenerator {
 	public int getNumberOfReferences() {
 		return NumberOfReferences;
 	}
-        public void gsetNumberOfReferences(int x) {
+        
+        //
+        public void setNumberOfReferences(int x) {
 		NumberOfReferences=x;
 	}
 	@Override

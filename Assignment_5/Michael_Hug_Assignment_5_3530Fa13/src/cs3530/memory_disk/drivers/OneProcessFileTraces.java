@@ -20,13 +20,15 @@ public class OneProcessFileTraces {
 	public static void main(String[] args) 
         {
                 System.out.println("memory reference stream in the file spice.din");
-		for (int i =0; i <5;i++)
+		for (int i =0; i <4;i++)
                 {
-                    for (int j =0; j <4;j++)
+                    for (int j =0; j <5;j++)
                     {
-                        looop(i+1,j);
+                        //looop(i+1,j);
+                        looop(j+1,i);
                     }
                 }
+                System.out.println();
 	}
         
         public static void looop(int numruns, int selectionstrategy) 
@@ -37,8 +39,8 @@ public class OneProcessFileTraces {
 		prg1 = new PageReferenceGeneratorFile("spice.din", FRAME_BITS);
 		//prg1 = new PageReferenceGeneratorFile("cc1.din", FRAME_BITS);
 		PageReferenceGenerator prg;
-		prg = prg1;
-		//prg = new PageReferenceGeneratorWithOracle(prg1, mem);
+		//prg = prg1;
+		prg = new PageReferenceGeneratorWithOracle(prg1, mem);
 		Process proc = new Process( NUMBER_OF_PAGES, mem, prg);
 		while(proc.isRunning()) {
 			proc.step();
@@ -46,20 +48,21 @@ public class OneProcessFileTraces {
 		int numPageReq = mem.getCountMemoryReferences();
 		int numFaults = mem.getCountPageFaults();
 		double ratio = (double)numFaults/numPageReq;
-                System.out.println("Run number="+numruns+", Selections strategy="+getNameofselectionsStratgy(selectionstrategy));
+                System.out.print("Run number="+numruns+", Selections strategy="+getNameofselectionsStratgy(selectionstrategy)+" ");
 		System.out.printf("Page Requests: %6d PageFaults: %8d Fault ratio: %.8f\n",
 				numPageReq, numFaults, ratio);
         }
+        
         public static String getNameofselectionsStratgy(int x)
         {
             if (x==0)
                 return "choose_optimal";
             if (x==1)
-                return "choose_LRU";
+                return "choose_LRU    ";
             if (x==2)
                 return "choose_constant";
             if (x==3)
-                return "choose_random";
+                return "choose_random ";
             return "Whoops.... Looks like all the programmers are busy playing red rover. We'll send someone right over. ";
         }
 }

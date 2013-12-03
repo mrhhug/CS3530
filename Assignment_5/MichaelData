@@ -1,0 +1,43 @@
+Run number=1, Selections strategy=choose_optimal	Page Requests: 500000 PageFaults:   124228 Fault ratio: 0.24845600
+Run number=2, Selections strategy=choose_optimal	Page Requests: 500000 PageFaults:   124416 Fault ratio: 0.24883200
+Run number=3, Selections strategy=choose_optimal	Page Requests: 500000 PageFaults:   124318 Fault ratio: 0.24863600
+Run number=4, Selections strategy=choose_optimal	Page Requests: 500000 PageFaults:   124535 Fault ratio: 0.24907000
+Run number=5, Selections strategy=choose_optimal	Page Requests: 500000 PageFaults:   124186 Fault ratio: 0.24837200
+Run number=1, Selections strategy=choose_LRU    	Page Requests: 500000 PageFaults:   192686 Fault ratio: 0.38537200
+Run number=2, Selections strategy=choose_LRU    	Page Requests: 500000 PageFaults:   192570 Fault ratio: 0.38514000
+Run number=3, Selections strategy=choose_LRU    	Page Requests: 500000 PageFaults:   192761 Fault ratio: 0.38552200
+Run number=4, Selections strategy=choose_LRU    	Page Requests: 500000 PageFaults:   192702 Fault ratio: 0.38540400
+Run number=5, Selections strategy=choose_LRU    	Page Requests: 500000 PageFaults:   193095 Fault ratio: 0.38619000
+Run number=1, Selections strategy=choose_constant	Page Requests: 500000 PageFaults:   272830 Fault ratio: 0.54566000
+Run number=2, Selections strategy=choose_constant	Page Requests: 500000 PageFaults:   271713 Fault ratio: 0.54342600
+Run number=3, Selections strategy=choose_constant	Page Requests: 500000 PageFaults:   271132 Fault ratio: 0.54226400
+Run number=4, Selections strategy=choose_constant	Page Requests: 500000 PageFaults:   271109 Fault ratio: 0.54221800
+Run number=5, Selections strategy=choose_constant	Page Requests: 500000 PageFaults:   270796 Fault ratio: 0.54159200
+Run number=1, Selections strategy=choose_random 	Page Requests: 500000 PageFaults:   209067 Fault ratio: 0.41813400
+Run number=2, Selections strategy=choose_random 	Page Requests: 500000 PageFaults:   209030 Fault ratio: 0.41806000
+Run number=3, Selections strategy=choose_random 	Page Requests: 500000 PageFaults:   209551 Fault ratio: 0.41910200
+Run number=4, Selections strategy=choose_random 	Page Requests: 500000 PageFaults:   208871 Fault ratio: 0.41774200
+Run number=5, Selections strategy=choose_random 	Page Requests: 500000 PageFaults:   208559 Fault ratio: 0.41711800
+
+
+memory reference stream in the file spice.din
+Run number=1, Selections strategy=choose_optimal Page Requests: 1500001 PageFaults:     7545 Fault ratio: 0.00503000
+Run number=2, Selections strategy=choose_optimal Page Requests: 1500001 PageFaults:     7545 Fault ratio: 0.00503000
+Run number=3, Selections strategy=choose_optimal Page Requests: 1500001 PageFaults:     7545 Fault ratio: 0.00503000
+Run number=4, Selections strategy=choose_optimal Page Requests: 1500001 PageFaults:     7545 Fault ratio: 0.00503000
+Run number=5, Selections strategy=choose_optimal Page Requests: 1500001 PageFaults:     7545 Fault ratio: 0.00503000
+Run number=1, Selections strategy=choose_LRU     Page Requests: 1500001 PageFaults:    11318 Fault ratio: 0.00754533
+Run number=2, Selections strategy=choose_LRU     Page Requests: 1500001 PageFaults:    11318 Fault ratio: 0.00754533
+Run number=3, Selections strategy=choose_LRU     Page Requests: 1500001 PageFaults:    11318 Fault ratio: 0.00754533
+Run number=4, Selections strategy=choose_LRU     Page Requests: 1500001 PageFaults:    11318 Fault ratio: 0.00754533
+Run number=5, Selections strategy=choose_LRU     Page Requests: 1500001 PageFaults:    11318 Fault ratio: 0.00754533
+Run number=1, Selections strategy=choose_constant Page Requests: 1500001 PageFaults:   195054 Fault ratio: 0.13003591
+Run number=2, Selections strategy=choose_constant Page Requests: 1500001 PageFaults:   195054 Fault ratio: 0.13003591
+Run number=3, Selections strategy=choose_constant Page Requests: 1500001 PageFaults:   195054 Fault ratio: 0.13003591
+Run number=4, Selections strategy=choose_constant Page Requests: 1500001 PageFaults:   195054 Fault ratio: 0.13003591
+Run number=5, Selections strategy=choose_constant Page Requests: 1500001 PageFaults:   195054 Fault ratio: 0.13003591
+Run number=1, Selections strategy=choose_random  Page Requests: 1500001 PageFaults:    17655 Fault ratio: 0.01176999
+Run number=2, Selections strategy=choose_random  Page Requests: 1500001 PageFaults:    17551 Fault ratio: 0.01170066
+Run number=3, Selections strategy=choose_random  Page Requests: 1500001 PageFaults:    17767 Fault ratio: 0.01184466
+Run number=4, Selections strategy=choose_random  Page Requests: 1500001 PageFaults:    17607 Fault ratio: 0.01173799
+Run number=5, Selections strategy=choose_random  Page Requests: 1500001 PageFaults:    17667 Fault ratio: 0.01177799
