@@ -22,7 +22,7 @@ public class OneProcessFileTraces {
                 System.out.println("memory reference stream in the file spice.din");
 		for (int i =0; i <4;i++)
                 {
-                    for (int j =0; j <5;j++)
+                    for (int j =0; j <1;j++)
                     {
                         //looop(i+1,j);
                         looop(j+1,i);

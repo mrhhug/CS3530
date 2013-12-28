@@ -26,7 +26,7 @@ public class PageReferenceGeneratorFile implements PageReferenceGenerator {
 	private String fileName;
 	private BufferedReader input;
 	private String nextLine;
-        private int NumberOfReferences =500000  ;
+        private int NumberOfReferences = 1100001  ;
 	
 	/**
 	 * Read in data from the given file name.
