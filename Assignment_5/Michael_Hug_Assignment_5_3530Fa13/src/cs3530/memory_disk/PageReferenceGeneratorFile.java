@@ -103,7 +103,7 @@ public class PageReferenceGeneratorFile implements PageReferenceGenerator {
 	 */
 	@Override
 	public int getNumberOfReferences() {
-		return NumberOfReferences;
+		return 2000005;
 	}
         
         //
